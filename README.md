@@ -12,3 +12,10 @@ Please click Raw_Data to enter the data set.
     2. Elevation: This is the elevation map of the whole world  
     3. Presciption_monthly: This is the monthly prescipitation data from 1901 to 2012  
     4. Temperature_monthly: This is the monthly temperature data from 1901 to 2012  
+
+## Code
+There are three files in the code folder:
+
+  1. Temp_mon_H: Calculate the hurst coefficient of monthly temperature.  
+  2. Pre_mon_H: Calculate the hurst coefficient of monthly prescipition.  
+  
