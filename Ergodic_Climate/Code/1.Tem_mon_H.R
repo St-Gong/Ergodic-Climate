@@ -10,7 +10,6 @@
 # 2.Working directories--------
   dir <- list()
   dir$root <- dirname(getwd())
-  dir$Temperature_daily <- paste(dir$root,"/Data/Raw_Data/Temperature_daily",sep="")
   dir$Temperature_monthly <- paste(dir$root,"/Data/Raw_Data/Temperature_monthly",sep="")
   dir$map <- paste(dir$root,"/Data/Raw_Data/Chinese_Map",sep="")
   dir$output <- paste(dir$root,"/Output",sep="")
@@ -19,7 +18,7 @@
 # 3.Download Monthly data from "http://hydrology.princeton.edu/data/pgf/v2/0.5deg/monthly/" -----
 
   #Monthly data
-  url <- "http://hydrology.princeton.edu/data/pgf/v2/0.5deg/monthly/update_temp/tas_monthly_1948-2014.nc"
+  url <- "http://hydrology.princeton.edu/data/pgf/v2/0.5deg/monthly/tas_monthly_1901-2012.nc"
   destfile <- paste(dir$Temperature_monthly,"/tas_monthly_1901-2012.nc",sep="")
   download.file(url, destfile=destfile, method="curl", quiet = FALSE, mode = "w")
 
